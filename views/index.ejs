@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+<div class="welcomeText">
+    <h1>Home</h1>
+    <% PostData.forEach(post => { %>
+        <div class="title">
+            <h2>
+                <%= post.title %> 
+            </h2>
+            <div class="data">
+                <p>
+                    <%= post.data %> 
+                </p>
+            </div>
+        </div>
+    <% });%>
+</div>
+
+<%- include('partials/footer'); -%>
